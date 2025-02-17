@@ -1,8 +1,8 @@
 :root {
-    --color-primary: #4B69FD;
+    --color-primary: #97edf3;
     --color-secondary: #FFF9EB;
     --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
+    --color-button: #2b63fe;
     --color-button-hover: #e55720;
     --color-text: #444444;
     --color-white: #FFFFFF;
@@ -136,7 +136,7 @@ ul {
 
 .result-list {
     margin-top: 15px;
-    color: #05DF05;
+    color: #f10741;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
@@ -150,6 +150,15 @@ ul {
     padding: 10px 40px;
     color: var(--color-white);
     background-color: var(--color-button);
+    font-size: 16px;
+}
+.button-draw2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    color: var(--color-white);
+    background-color: #f10707d2;
     font-size: 16px;
 }
 
