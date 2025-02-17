@@ -6,32 +6,32 @@ let listaNomnres = [];
     function agregarAmigo() {
         let nomnbreDeTexto = document.getElementById('amigo').value;
         let nomnbreDeTextoLista = document.getElementById('listaAmigos').value;
+        
         if (nomnbreDeTexto === ""){
                 alert("Error, Por favor, inserte un nombre.")
                 return
         }
         listaNomnres.push(nomnbreDeTexto);
-        console.log("hola soy toño");
-       // limpiarCajadeTexto();
+        
+        let listaAmigos = document.getElementById('listaAmigos');
+        let li = document.createElement('li');
+        li.textContent = nomnbreDeTexto;
+        listaAmigos.appendChild(li);
+        
+        limpiarCajadeTexto();
     }
-/*
-function asignarTextoElemento(elemento, texto){
-    let elementoHTML = document.querySelector(elemento);
-    elementoHTML.innerHTML = texto;
-    return;
-}
 
 function limpiarCajadeTexto() {
     document.querySelector('#amigo').value = '';
 }
 
 function sortearAmigo() {
+    let resultadoAmigo = document.getElementById('resultado');
+
     let nombreSorteado = Math.floor(Math.random()*listaNomnres.length);
 
-//si ya sorteamos todos los numeros
-            let (nombreSorteado.length == listaNomnres)
-                
-            
+    let amigoSecreto = listaNomnres[nombreSorteado];    
+    resultadoAmigo.innerHTML = `<li>el ganador es: ${amigoSecreto}</li>`;
 
     }
-*/
+
